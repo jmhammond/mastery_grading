@@ -57,6 +57,11 @@ table.paleGrayRows tfoot td th {
   font-size: 1em;
 }
 
+table.paleGrayRows td {
+  font-size: 1em;
+  font-weight: normal;
+}
+
 /* table.paleGrayRows td:nth-last-child(1) { */
 /*   font-size: 13px; */
 /*   font-weight: normal; */
@@ -93,6 +98,10 @@ h3 { font-size: 1.2em; }
 h4 { font-size: 1em; }
 small { font-size: 0.750em; }
 strong { color: darken(slategrey,20%);}
+
+.message {
+  font-weight: normal;
+}
 
 @media screen and (max-width: 600px) {
     table thead {

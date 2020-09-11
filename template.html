@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Math 243 Grades</title>
+    <link rel="stylesheet" href="./report.css">
+</head>
+<body>
+<div class="container">
+    <h3> {{ Name }} </h3>
+
+    <p>
+    <p>
+        This is the grade based on the SGN grading system. We consider the last two attempts on each standard. The letter 'S' is worth 1 point, the letter 'G' is worth 0.5 points, and the letter 'N' is worth 0 points.
+
+    </p>
+    <p>
+        The 'NaN' that you see is 'not a number'(*) and means we haven't attempted that standard yet. If you see a 'Z' that means that there was no work for that standard.
+    </p>
+    <h4> Summary grade for the {{ midterm_or_final }} </h4>
+
+        <table>
+            <tr>
+                <td> <b>Points:</b> </td>
+                <td> {{ score }} </td>
+            </tr>
+            <tr>
+                <td><b> Number of Grades below G: </b></td>
+                <td> {{ number_of_ns }} </td>
+            </tr>
+            <tr>
+                <td><b> Midterm Letter Grade </td></b>
+                <td> {{ letter_grade }} </td>
+            </tr>
+        </table>
+
+    </p>
+    <h5>
+        Raw Data from Blackboard
+    </5>
+     {{ raw_data }}
+
+    <p>
+
+        <div> <small>Run on {{ date }}</small>
+            <div>(*) I've generated this report <a href="https://github.com/jmhammond/mastery_grading">via python pandas</a>, acting off raw the dataset from Blackboard's gradebook. You can check <a href="https://github.com/jmhammond/mastery_grading">my code on GitHub</a>.</div>
+    </p>
+
+    </div>
+</body>
+</html>

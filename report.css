@@ -1,0 +1,105 @@
+/***
+ Formatting to try to make the tables pretty.
+ They were initially generated with https://divtable.com/table-styler/
+ and then custom modified
+ ***/
+table.paleGrayRows {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    width: 100%;
+  /* border: 1px solid #000000; */
+  background-color: #EEEEEE;
+  /* width: 350px; */
+  /* /\* height: 200px; *\/ */
+  text-align: center;
+}
+table.paleGrayRows td, table.paleGrayRows th {
+  border: 1px solid #FFFFFF;
+}
+table.paleGrayRows tbody td {
+  font-size: 13px;
+}
+
+table.paleGrayRows tr:nth-child(even) {
+  background: #FFFFFF;
+}
+
+table.paleGrayRows thead th {
+  background: #0B6FA4;
+  color: #FFFFFF;
+  border-bottom: 1px solid #000000;
+}
+
+table.paleGrayRows th {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  border-left: 2px solid #FFFFFF;
+}
+
+table.paleGrayRows thead th:first-child {
+  border-left: none;
+}
+
+table.paleGrayRows tbody tr:nth-last-child(1) {
+  font-size: 13px;
+  font-weight: normal;
+  color: #333333;
+  background: #DFE0DF;
+  border-top: 2px solid #444444;
+}
+
+table.paleGrayRows tfoot td th {
+  font-size: 1em;
+}
+
+table.paleGrayRows td:nth-last-child(1) {
+  font-size: 13px;
+  font-weight: normal;
+  color: #333333;
+  background: #DFE0DF;
+  border-left: 2px solid #444444;
+}
+
+/*
+Page styling
+================================== */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+html { 
+    height: 100%;
+    background-color: #EEE; 
+}
+body {
+    box-sizing: border-box;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 800px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.em;
+    background-color: white;
+    /* border: double 3px #DDD; */
+    /* border-top: none; border-bottom: none; */
+}
+h1, h2, h3, h4, h5, h6 { margin-top: 0; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1em; }
+small { font-size: 0.750em; }
+strong { color: darken(slategrey,20%);}
+
+@media screen and (max-width: 600px) {
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+}

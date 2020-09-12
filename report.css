@@ -3,6 +3,13 @@
  They were initially generated with https://divtable.com/table-styler/
  and then custom modified
  ***/
+
+table.grades {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+table.grades tr:nth-child(odd){background-color: #f2f2f2;}
+
 table.paleGrayRows {
     border: 1px solid #ccc;
     border-collapse: collapse;

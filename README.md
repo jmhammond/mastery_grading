@@ -20,11 +20,11 @@ This repository has dummy data (test.csv) test purposes.
 
 | Final Letter Grade | Points Needed                             | WebAssign Homework (entire course) |
 |--------------------|-------------------------------------------|------------------------------------|
-| A                  | ≥ 51 points and no scores below G         | ≥ 80%                              |
-| B                  | ≥ 45 points and at most 2 scores below G  | ≥ 70%                              |
-| C                  | ≥ 39 points and at most 6 scores below G  | ≥ 60%                              |
-| D                  | ≥ 33 points                               | ≥ 50%                              |
-| F                  | < 33 points                               | < 50%                              |
+| A                  | ≥ 46 points and no scores below G         | ≥ 80%                              |
+| B                  | ≥ 39 points and at most 2 scores below G  | ≥ 70%                              |
+| C                  | ≥ 35 points and at most 6 scores below G  | ≥ 60%                              |
+| D                  | ≥ 30 points                               | ≥ 50%                              |
+| F                  | < 30 points                               | < 50%                              |
 
 ## Background
 From the syllabus:

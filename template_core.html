@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8"/>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="./report.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h2> {{ Name }} </h2>
+
+            <h3> Summary grade for the {{ midterm_or_final }} </h3>
+            {{ extra_text }}
+
+            <table class="grades">
+                <tr>
+                    <td> <b>Core Mastered:</b> </td>
+                    <td style="text-align: center"> {{ core_mastered }} </td>
+                </tr>
+                <tr>
+                    <td><b>Core Proficient: </b></td>
+                    <td style="text-align: center"> {{ core_proficient }} </td>
+                </tr>
+                <tr>
+                    <td><b>Supplemental Mastered</b></td>
+                    <td style="text-align: center"> {{ supplemental_mastered }} </td>
+                </tr>
+                <tr>
+                    <td><b>Supplemental Proficient</b></td>
+                    <td style="text-align: center"> {{ supplemental_proficient }} </td>
+                </tr>
+                <tr>
+                    <td><b> Midterm Letter Grade </b></td>
+                    <td style="text-align: center"> {{ letter_grade }} </td>
+                </tr>
+            </table>
+            <br/><br/>
+
+            <h3>
+                Here's the raw Data from Blackboard
+            </h3>
+            {{ raw_data }}
+            <br/><br/>
+
+            <h3>
+                How was this computed?
+            </h3>
+
+            <p>
+                This is the grade based on the mastery grading system. The symbol 'PM' means 'mastered', the letter 'P' means 'proficient', and the letter 'N' means not attempted.
+            </p>
+            <p>
+                The calculation of the letter grade is determined by thresholds outlined in the syllabus and below. Additionally, the +/- is determined by proximity to the next letter grade. Note that this document gives only the letter grade. +/- is assigned on MyWSU.
+            </p>
+            <h3>The grade threshold for the {{midterm_or_final}}</h3>
+            {{ grade_threshold }}
+            <br/><br/>
+
+            <h3>How was it computed? As in the code?</h3>
+            <p class="message">I've generated this report via python pandas, acting off the raw dataset from Blackboard's gradebook. You can check <a href="https://github.com/jmhammond/mastery_grading">my code on GitHub</a>. 
+            </p>
+
+            <p>
+                <div> <small>Run on {{ date }}</small> </div>
+            </p>
+        </div>
+    </body>
+</html>

@@ -5,6 +5,9 @@ Given a comma-separated spreadsheet downloaded from Blackboard, it reads the mar
 
 It then generates a PDF summary for each student, with the file named after the student. 
 
+## "Your code isn't great"
+
+I know. 
 
 Keep in mind that I'm a math teacher and not a programmer (I bailed on that job over a decade ago!) 
 ![](https://imgs.xkcd.com/comics/code_quality.png)
